@@ -17,7 +17,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
 
-train_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/train.csv"
+train_path = "data/train.csv"
 df = pd.read_csv(train_path)
 print(df.head())
 print(df.columns) #there seems to be many null values cant remove them all so we'll try to fill the values with most freq for object types and median for continious valued columns 
@@ -183,7 +183,7 @@ plt.show() #locking min_samples_leaf=None, tuning is not helping
 model = RandomForestClassifier(n_estimators=300, n_jobs=-1)
 
 #importing test data and preparing it to predict values for first submission 
-test_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/test.csv"
+test_path = "data/test.csv"
 test_df = pd.read_csv(test_path)
 
 X_test = test_df.drop(useless_col,axis=1)
@@ -207,4 +207,5 @@ submission.to_csv('submissionRF.csv',index=False) #0.798 accuracy score on kaggl
 Improvements for next iteration : 1)Try to explore data for more informative features that might help model,
                                   2)Proper Feature selection using feature selection tool,
                                   3)Try XGBoosting,Cross-Validation,
+
                                   4)reach atleast 80-81% accuracy on test dataset '''

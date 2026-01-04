@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split,StratifiedKFold,cross_val_s
 from sklearn.metrics import accuracy_score
 
 
-train_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/train.csv"
+train_path = "data/train.csv"
 df = pd.read_csv(train_path)
 
 
@@ -223,7 +223,7 @@ print('accuracy score on X_test:',accuracy_score(y_test,y_pred)) #0.796 a little
 '''Using test set to make final predictions for iteration(2)'''
 #---------------
 #importing test dataset
-test_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/test.csv"
+test_path = "data/test.csv"
 test_df = pd.read_csv(test_path)
 
 #creating deatures we created in train df
@@ -251,3 +251,4 @@ submission = pd.DataFrame({
 submission.to_csv('submission_iter(2).csv',index=False) ##0.7996 accuracy score on kaggle; LB rank = 1453/2692, improvement from last time not bad ig it wasnt all worth nothing afterall
 
 #Aint gonna lie this 0.001 gained honestly is worth more than 0.01 gained by luck to me rn, im super pumped up!!!!
+

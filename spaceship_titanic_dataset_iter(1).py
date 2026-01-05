@@ -163,7 +163,7 @@ plt.xlabel('n')
 plt.ylabel('accuracy')
 plt.show() #locking n=300 cuz thats the only value which isnt fluctuiting much for changing random states so i consider it a stable value
 
-#Letting max_depth be at None tuning it isnt helping; ig we'll have to let the tree grow xD
+#Letting max_depth be at None tuning it isnt helping; 
 
 #Tuning min_samples_leaf
 values_minsamplesleaf = range(1,50)
@@ -203,9 +203,9 @@ submission = pd.DataFrame({
 
 submission.to_csv('submissionRF.csv',index=False) #0.798 accuracy score on kaggle; LB rank = 1522/2692
 
-'''Learned a lot from this 1st iteration, stuff like feature creation and how to create informative features which help model predict better 
+'''Learnings from this 1st iteration: Feature creation and how to create informative features which help model predict better 
 Improvements for next iteration : 1)Try to explore data for more informative features that might help model,
                                   2)Proper Feature selection using feature selection tool,
                                   3)Try XGBoosting,Cross-Validation,
-
                                   4)reach atleast 80-81% accuracy on test dataset '''
+

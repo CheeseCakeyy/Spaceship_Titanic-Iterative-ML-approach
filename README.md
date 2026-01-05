@@ -26,8 +26,8 @@ The goal was not just leaderboard performance, but **correct ML methodology and 
 
 ###  Results
 - **Validation Accuracy:** ~0.77–0.79  
-- **Kaggle Score:** _(fill in)_  
-- **Leaderboard Rank:** _(fill in)_
+- **Kaggle Score:** 0.798  
+- **Leaderboard Rank:** 1522/2692
 
 ###  Takeaway
 Solid baseline established, but:
@@ -66,8 +66,8 @@ Solid baseline established, but:
 ###  Results
 - **Best CV Accuracy (RF_lr):** ~0.800  
 - **Test Accuracy:** ~0.796  
-- **Kaggle Score:** slight improvement (+0.001)  
-- **Leaderboard Rank:** _(fill in)_
+- **Kaggle Score:** 0.799,slight improvement (+0.001),  
+- **Leaderboard Rank:** 1453/2692
 
 ###  Takeaway
 - Feature engineering does **not always guarantee gains**
@@ -96,7 +96,7 @@ Solid baseline established, but:
 ###  Results
 - **CV Accuracy:** ~0.804–0.805  
 - **Kaggle Score:** ~0.805  
-- **Leaderboard Rank:** _(fill in)_
+- **Leaderboard Rank:** 741/2719
 
 ###  Takeaway
 - XGBoost extracted additional non-linear signal
@@ -111,9 +111,9 @@ Solid baseline established, but:
 
 | Iteration | Model | CV / Val Accuracy | Kaggle Score | Rank |
 |--------|------|------------------|-------------|------|
-| Iter 1 | RF / LR | ~0.77–0.79 | _(fill)_ | _(fill)_ |
-| Iter 2 | RF + LR FS | ~0.80 | _(fill)_ | _(fill)_ |
-| Iter 3 | XGBoost | **~0.805** | _(fill)_ | _(fill)_ |
+| Iter 1 | RF / LR | ~0.77–0.79 | 0.798 | 1522/2692 |
+| Iter 2 | RF + LR FS | ~0.80 | 0.799 | 1453/2692 |
+| Iter 3 | XGBoost | **~0.805** | 0.805 | 741/2719 |
 
 ---
 

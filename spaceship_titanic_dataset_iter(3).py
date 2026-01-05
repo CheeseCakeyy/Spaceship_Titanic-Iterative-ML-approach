@@ -1,6 +1,6 @@
 #This is iteration 3 of trying to improve results on testset of spaceship titanic comp dataset 
-#we already tried RF,feature selection and CV now its turn to use XGBoost with CV
-#Apparantly XGBoost doesnt require scaling of data so we wont be scaling any features this time it will only be imputing this time 
+#already tried RF,feature selection and Cross validation now its turn to use XGBoost with Cross validation
+#XGBoost doesnt require scaling of data so no scaling of any features this time it will only be imputing this time 
 
 import pandas as pd 
 from sklearn.model_selection import cross_val_score,StratifiedKFold
@@ -118,7 +118,7 @@ Honestly which are great so its ready in my opinion to give a shot at testing da
 test_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/test.csv"
 test_df = pd.read_csv(test_path)
 
-#creating features we created in train df
+#creating features, created in train df
 test_df[["Deck", "Cabin_num", "Side"]] = test_df["Cabin"].str.split('/',expand=True) 
 test_df = test_df.drop('Cabin',axis=1)
 test_df["Total_spend"] = test_df[["RoomService","ShoppingMall", "FoodCourt", "Spa", "VRDeck"]].sum(axis=1)
@@ -140,4 +140,5 @@ submission = pd.DataFrame({
     'Transported': y_pred
 })
 
-submission.to_csv('submission_iter(3).csv',index=False) #0.805 accuracy score on kaggle; LB rank = 740/2692, hehehehehe
+submission.to_csv('submission_iter(3).csv',index=False) #0.805 accuracy score on kaggle; LB rank = 740/2692
+

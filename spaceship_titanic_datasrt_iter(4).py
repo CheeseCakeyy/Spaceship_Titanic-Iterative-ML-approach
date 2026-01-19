@@ -12,7 +12,7 @@ from sklearn.model_selection import StratifiedKFold,cross_val_score
 from sklearn.preprocessing import OneHotEncoder
 
 
-train_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/train.csv"
+train_path = "data/train.csv"
 df = pd.read_csv(train_path)
 
 df.info()
@@ -114,7 +114,7 @@ LGBM CV std : 0.008980974822494991'''
 #------------
 '''Iteration 3 submission '''
 #------------
-test_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/test.csv"
+test_path = "data/test.csv"
 test_df = pd.read_csv(test_path)
 
 #creating features we created in train df
@@ -140,5 +140,6 @@ submission = pd.DataFrame({
     "PassengerId": test_df["PassengerId"],
     'Transported': y_pred
 })
+
 
 # submission.to_csv('submission_iter(4).csv',index=False) #0.80734 best so far 293/2292 

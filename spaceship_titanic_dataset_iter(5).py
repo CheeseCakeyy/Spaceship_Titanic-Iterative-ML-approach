@@ -116,3 +116,5 @@ submission = pd.DataFrame({
 
 
 submission.to_csv('submission_iter(5).csv',index=False)  #0.8024 less than LGBM which was 0.80734
+
+'''When changing algorithms stops giving gains, the problem is no longer the model — it’s the representation.'''

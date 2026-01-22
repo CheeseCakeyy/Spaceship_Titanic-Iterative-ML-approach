@@ -10,7 +10,7 @@ from catboost import CatBoostClassifier,Pool,cv
 from sklearn.model_selection import train_test_split
 
 
-train_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/train.csv"
+train_path = "data/train.csv"
 df = pd.read_csv(train_path)
 
 df.info()
@@ -85,7 +85,7 @@ Our final output explainatin:
 #---------------------
 '''Iteration 5 Submission'''
 #---------------------
-test_path = "C:/Users/Adwait Tagalpallewar/Downloads/spaceship-titanic/test.csv"
+test_path = "data/test.csv"
 test_df = pd.read_csv(test_path)
 
 #creating features we created in train df
@@ -113,5 +113,6 @@ submission = pd.DataFrame({
     'PassengerId' : test_df['PassengerId'],
     'Transported' : y_pred
 })
+
 
 submission.to_csv('submission_iter(5).csv',index=False)  #0.8024 less than LGBM which was 0.80734

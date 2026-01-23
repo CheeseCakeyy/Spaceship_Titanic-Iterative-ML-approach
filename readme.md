@@ -148,6 +148,7 @@ A solid baseline, but:
 | Iter 2 | RF + LR FS | ~0.80 | 0.799 | 1453/2692 |
 | Iter 3 | XGBoost | ~0.805 | 0.805 | 741/2719 |
 | Iter 4 | **LightGBM** | **~0.808** | **0.807** | **293/2292** |
+| Iter 5 | Catboost | ~0.816 | 0.8024 | No improvements |
 
 ---
 

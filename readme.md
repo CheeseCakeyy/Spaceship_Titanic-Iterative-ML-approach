@@ -173,5 +173,5 @@ This project demonstrates a **disciplined and correct ML workflow**, progressing
 - Stacking with a meta-learner
 - Feature interaction discovery
 - Probability calibration and threshold tuning
-- Explore CatBoost for native categorical handling
+- Explore CatBoost for native categorical handling (Done)
 

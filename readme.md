@@ -174,4 +174,5 @@ This project demonstrates a **disciplined and correct ML workflow**, progressing
 - Feature interaction discovery
 - Probability calibration and threshold tuning
 - Explore CatBoost for native categorical handling (Done)
+- Automating the feature creation by wrapping it into a function
 

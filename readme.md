@@ -170,9 +170,8 @@ This project demonstrates a **disciplined and correct ML workflow**, progressing
 
 ## Future Work
 - Model ensembling (RF + XGB + LGBM)
-- Stacking with a meta-learner
 - Feature interaction discovery
 - Probability calibration and threshold tuning
-- Explore CatBoost for native categorical handling (Done)
+- Explore CatBoost for native categorical handling (Implemented/Achived)
 - Automating the feature creation by wrapping it into a function
 
